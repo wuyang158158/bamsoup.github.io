@@ -624,6 +624,7 @@ div#home{
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 10px;
+  width: 100%;
 }
 #about .bg {
     width: 60%;
