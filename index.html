@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <link rel="Shortcut Icon" href="./images/favicon/logo16px.png">
+    <link rel="Shortcut Icon" href="./images/favicon/logo57px.png">
     <link rel="apple-touch-icon-precomposed" href="./images/favicon/logo57px.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon/logo72px.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicon/logo114px.png">
@@ -44,11 +44,25 @@
    	================================================== -->
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/swiper.min.css">
+
     <!-- Google web font
    ================================================== -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:700' rel='stylesheet' type='text/css'> -->
     <!-- Javascript
 ================================================== -->
+  <style media="screen">
+  .swiper-container {
+    width: 100%;
+  }
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 30px;
+  }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -92,12 +106,11 @@
 
                     <!-- <li><a href="#home" class="smoothScroll">HOME</a></li> -->
 
-                    <li><a href="#home" class="smoothScroll smoothScroll-index">首頁</a></li>
-                    <li><a href="#work" class="smoothScroll smoothScroll-Introduction">GoFit 介紹</a></li>
-                    <li><a href="#team" class="smoothScroll smoothScroll-Technical">技術實現</a></li>
-                    <li><a href="#roadmap" class="smoothScroll smoothScroll-Road">路線圖</a></li>
-                    <li><a href="#plan" class="smoothScroll smoothScroll-Core">核心團隊</a></li>
-                    <li><a href="#FQA" class="smoothScroll">FAQ</a></li>
+                    <li><a href="#home" class="smoothScroll smoothScroll-index">首页</a></li>
+                    <li><a href="#work" class="smoothScroll smoothScroll-Introduction">品牌</a></li>
+                    <li><a href="#about" class="smoothScroll smoothScroll-Technical">汤品</a></li>
+                    <li><a href="#roadmap" class="smoothScroll smoothScroll-Road">汤文化</a></li>
+                    <li><a href="#FQA" class="smoothScroll">联系我们</a></li>
 
                     <!-- nav-dropdown language
 				================================================== -->
@@ -118,38 +131,57 @@
     <!-- Homepage section
 ================================================== -->
     <div id="home">
-        <div class="site-slider">
-            <ul>
-                <li>
-                    <img class="site-slider-img" src="images/slider/banner-bg.png" alt="slider image 1">
-                    <div class="bxslider-bg">
-                        <!-- <img class="site-slider-img-bg" src="images/slider/banner.png" alt="slider image 1"> -->
-                    </div>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="slider-caption">
-                                    <h2>GoFit.Chain</h2>
-                                    <p class="color-white">一個全民運動燃燒卡路里挖礦的沸騰鏈</p>
-                                    <div class="paper-wrap">
-                                        <div class="paper-flex">
-                                            <span>
-																			  <a class="white-paper home-p2" href="#" target="_blank">白皮書</a>
-																					<!-- <a class="white" href="https://www.idbook.io/idbook_zh-Hant.pdf" target="_blank">White Paper1</a> -->
-																			</span>
-                                        </div>
-                                        <div class="paper-flex">
-                                            <span>
-																				<a class="home-p3" href="#" target="_blank">電報</a>
-																			</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="site-slider">
+                      <ul>
+                          <li>
+                              <img class="site-slider-img" src="images/slider/banner-bg1.jpg" alt="slider image 1">
+                              <div class="bxslider-bg">
+                                  <!-- <img class="site-slider-img-bg" src="images/slider/banner.png" alt="slider image 1"> -->
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <!-- <div class="slider-caption">
+                                              <h2>Bamsoup</h2>
+                                              <p class="color-white">竹炉·原椰系-享受热带风情</p>
+                                          </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="site-slider">
+                      <ul>
+                          <li>
+                              <img class="site-slider-img" src="images/slider/banner-bg2.jpg" alt="slider image 1">
+                              <div class="bxslider-bg">
+                                  <!-- <img class="site-slider-img-bg" src="images/slider/banner.png" alt="slider image 1"> -->
+                              </div>
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-md-12">
+                                          <!-- <div class="slider-caption">
+                                              <h2>Bamsoup</h2>
+                                              <p class="color-white">竹炉·御汤系-私宅里的国宴生活</p>
+                                          </div> -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
         </div>
         <!-- /.site-slider -->
 
@@ -165,10 +197,13 @@
 			================================================== -->
                 <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
                     <div class="section-title">
+                        <h1>美味 in 调补</h1>
                         <h3 id="heading" class="Idbook-p1">
-                          融合運動健康數據生態，全球第一個覆蓋運動 + 健康挖礦落地的區塊鏈項目。
+                          慢下来，享受竹炉时光
                           <br>
-                          基於區塊鏈架構，為用戶提供精準健康智能、運動追蹤的去中心化生命數據銀行。</h3>
+                          生活需要仪式感，精致的器具配上美味的汤荟
+                          </h3>
+                        <h3 id="heading" class="Idbook-p1 style-font-left" style="font-size: 14px!important;">竹炉.汤荟，传承华夏养生“药食同源”文化，悉心采选每一味食材，配以专业的节气养生方，专注韵雅润养汤饮和特色主食。为保持食材最本真的味道及营养价值，每日单盅现炖，均不含任何添加剂，致力于为关注健康养生的人群提供高品质的养生汤饮，让您随时享用美味的养生料理。</h3>
                     </div>
                 </div>
 
@@ -182,27 +217,31 @@
 			</div> -->
                 <div class="work-list-wrap">
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <img src="./images/record-icon.png" alt="">
-                        <h3 class="Idbook-p2 Idbook-p2-ac">數據記錄永不磨滅</h3>
-                        <h3 class="Idbook-p3">不存在第三方私有或刪除</h3>
+                        <img src="./images/p1.png" alt="">
+                        <h2>四季养生</h2>
+                        <h3 class="Idbook-p2 Idbook-p2-ac h3-width">竹炉每款汤饮都由殿堂级（香港）炖品专厨与中医食谱专家秘制。根据二十四节气潜心修方试汤，保证美味与健康并行，满足四季养生的调补需求。</h3>
+                        <!-- <h3 class="Idbook-p3">不存在第三方私有或刪除</h3> -->
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <img src="./images/transnational-icon.png" alt="">
-                        <h3 class="Idbook-p4">不受任何轄區的限制</h3>
-                        <h3 class="Idbook-p5">隨時隨地鏈接到沸騰鏈</h3>
+                        <img src="./images/p2.png" alt="">
+                        <h2>韵雅润养</h2>
+                        <h3 class="Idbook-p4 h3-width">以《饮膳正要》为基，旨在以食材配伍对身体进行解调养。保证所有汤饮均不含味精鸡精，保持汤品原汁原味，低热量，让身体由内至外零负担。</h3>
+                        <!-- <h3 class="Idbook-p5">隨時隨地鏈接到沸騰鏈</h3> -->
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <img src="./images/link-icon.png" alt="">
-                        <h3 class="Idbook-p6">任何數據都可通過共識</h3>
-                        <h3>記錄上鏈</h3>
+                        <img src="./images/p3.png" alt="">
+                        <h2>臻心选材</h2>
+                        <h3 class="Idbook-p6 h3-width">天然汤材，所用土鸡肉都会在公众号内公布鸡身二维码，可溯源验证。只选臻贵食材与无硫熏中药辅料。对食材挑剔至极，用上等好料缔造味蕾之旅。</h3>
+                        <!-- <h3>記錄上鏈</h3> -->
                     </div>
 
                     <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <img src="./images/setup-icon.png" alt="">
-                        <h3 class="Idbook-p7">所有需要健康數據的服務都</h3>
-                        <h3 class="Idbook-p8">可以在鏈上直接搭建</h3>
+                        <img src="./images/p4.png" alt="">
+                        <h2>单盅慢炖</h2>
+                        <h3 class="Idbook-p7 h3-width">270克山泉水+180克食材的黄金比例，放入450ML釉面白泥陶盅，经两小时细火慢煨，炖出流香，释放肉质营养，锁住饱和鲜味，呈献最鲜美汤饮。</h3>
+                        <!-- <h3 class="Idbook-p8">可以在鏈上直接搭建</h3> -->
                     </div>
                 </div>
 
@@ -215,458 +254,202 @@
     <!-- About section
 ================================================== -->
     <section id="about" class="parallax-section">
-        <div class="container">
-            <div class="section-title">
-                <h2 class="h2-cl Problem-p1">行業現狀</h2>
-            </div>
-            <div class="about-list">
-                <div class="list-item list-item1 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="./images/about-item-icon1.png" alt="">
-                    <h4 class="Problem-p2">運動數據價值利用率低</h4>
-                    <p class="Problem-p3">如今人們越來越關註自身的健康問題，運動數據實則是反映健康的核心指標之壹。用戶進行體育鍛煉中消耗了大量的能量，產生的各種生命數據卻並未得到很好的建檔、追蹤、分析。</p>
-                </div>
-                <div class="list-item list-item2 wow fadeInUp" data-wow-delay="0.6s">
-                    <img src="./images/about-item-icon2.png" alt="">
-                    <h4 class="Problem-p4">模式固定單壹</h4>
-                    <p class="Problem-p5">互聯網 + app + 線下，覆蓋面雖廣，但是用戶的粘著性、使用頻率低下。運動看起來是個剛需，但剛需未必是對於產品而言的。真正鍛練的人，未必要借助壹個工具或者平臺。</p>
-                </div>
-            </div>
+      <div class="container">
+          <div class="row">
+              <!-- Section title
+    ================================================== -->
+              <div class="section-title">
+                  <h2 class="Team-p1">竹炉·原椰系</h2>
+                  <h3 class="heading">纯净营养的累积，赋予最自然的味道</h3>
+              </div>
+              <div class="wow-wrap">
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
+                      <div class="team-wrapper">
+                          <img src="images/pro1.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>原椰玉竹麦冬乌鸡汤</h4>
+                              <h4>功效：清热解毒、舒肝健胃、生津润燥</h4>
+                          </div>
+                      </div>
+                  </div>
 
-            <img class="bg" src="./images/about-bg.png" alt="">
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="team-wrapper">
+                          <img src="images/pro2.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>原椰竹荪白莲土鸡汤</h4>
+                              <h4>功效：补气养阴、清心除烦、润肺止咳</h4>
+                          </div>
+                      </div>
+                  </div>
 
-            <div class="about-list">
-                <div class="list-item list-item3 wow fadeInUp" data-wow-delay="0.3s">
-                    <img src="./images/about-item-icon3.png" alt="">
-                    <h4 class="Problem-p6">運動健康據壁壘結合低</h4>
-                    <p class="Problem-p7">運動健康產業是壹系列產業的組合。但是長久以來，行業與行業間的數據很難結合，無法溯源用戶健康數據，用戶很難根據自己的綜合數據來判斷自己的健康情況。</p>
-                </div>
-                <div class="list-item list-item4  wow fadeInUp" data-wow-delay="0.6s">
-                    <img src="./images/about-item-icon4.png" alt="">
-                    <h4 class="Problem-p8">企業壟斷用戶數據洩露性高</h4>
-                    <p class="Problem-p9">傳統互聯網下，數據都是掌握在軟件服務商里，用戶數據得不到隱私保障性，急需去中心化應用來保障用戶權益。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                      <div class="team-wrapper">
+                          <img src="images/pro3.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                            <h4>原椰天麻甘栗乳鸽汤</h4>
+                            <h4>功效：补脑健脑、安神止痛、养发生发</h4>
+                          </div>
+                      </div>
+                  </div>
 
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+                      <div class="team-wrapper">
+                          <img src="images/pro4.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                            <h4>原椰雪芸豆甘栗猪蹄花汤</h4>
+                            <h4>功效：润肤消皱、益肾补元、壮骨补膝</h4>
+                          </div>
+                      </div>
+                  </div>
 
-    <!-- team section
-================================================== -->
-    <section id="team" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <div class="section-title">
-                    <h2 class="h2-cl Plan-p1">GoFit 的解決方案</h2>
-                    <hr>
-                    <h3 id="heading" class="Plan-p2">使用區塊鏈分布式賬本技術，設計 Token 化的經濟激勵機制，將人產生的運動數據以及健康數據記錄上鏈。</h3>
-                    <h3 id="heading" class="Plan-p3">1. 采用 Dpos 共識機制，委任權益證明</h3>
-                </div>
-            </div>
-        </div>
-        <div class="framework">
-            <img class="bg" src="./images/framework.png" alt="">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="section-title">
-                    <h3 id="heading">
-                        <span class="Plan-p4">2. 中控系統（簡稱 GFX）架構，結合人工智能深度學習 TensorFlow 架構</span>
-                        <br>
-                        <span class="Plan-p5">對數據與服務進行獎勵與服務分發</span>
-                    </h3>
-                    <h3 id="heading">
-                        <span class="Plan-p6">3. 數據通過共識認證後，產生 Token</span>
-                        <br>
-                        <span class="Plan-p7">GFC = f (MANA A, B, RvS, DoS)</span>
-                    </h3>
-                </div>
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
+                      <div class="team-wrapper">
+                          <img src="images/pro5.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                            <h4>原椰霸王花无花果豚肉汤</h4>
+                            <h4>功效：润肺止咳、排毒润肠、祛斑美白</h4>
+                          </div>
+                      </div>
+                  </div>
 
-            </div>
-        </div>
-    </section>
+              </div>
 
 
-    <!-- Portfolio section
-================================================== -->
-    <section id="portfolio" class="parallax-section">
-        <div class="container">
-            <div class="row">
 
-                <!-- Section title
-			================================================== -->
-                <div class="section-title">
-                    <h2 class="h2-cl node-p1">全民運動節點</h2>
-                </div>
-                <!-- <img class="bg portfolio-bg" src="./images/node-en.png" alt=""> -->
-                <img class="bg" src="./images/node-ch.png" alt="">
 
-                <!-- Portfolio bottom section portfolio-bottom-flex
-			================================================== -->
-                <div>
-                    <div class="portfolio-bottom portfolio-bottom-flex">
-                        <div class="col-md-6 col-sm-6">
-                            <h3 id="heading">23+</h3><span class="node-p2">全球見證節點</span>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <h3 id="heading" class="node-p3">100萬+</h3><span class="node-p4">全球機構節點</span>
-                        </div>
-                    </div>
-                </div>
+              <!-- Section title
+    ================================================== -->
+              <div class="section-title">
+                  <h2 class="Team-p1">竹炉·御汤系</h2>
+                  <h3 class="heading">慢炖时光，私宅里的国宴生活</h3>
+              </div>
+              <div class="wow-wrap">
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
+                      <div class="team-wrapper">
+                          <img src="images/proa2.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>原支人参葛根糯米乌鸡汤</h4>
+                              <h4>功效：平和补气、固本培元、提高免疫</h4>
+                          </div>
+                      </div>
+                  </div>
 
-            </div>
-        </div>
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <div class="team-wrapper">
+                          <img src="images/proa3.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>花胶瑶柱羊肚菌芦花鸡汤</h4>
+                              <h4>功效：滋阴固肾、补血活血、防癌抗癌</h4>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+                      <div class="team-wrapper">
+                          <img src="images/proa4.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>当归双参酿米酒鸡爪汤</h4>
+                              <h4>功效：气血双补、调经暖宫、驻颜养颜</h4>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+                      <div class="team-wrapper">
+                          <img src="images/proa5.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>黑松露白果参杞芦花鸡汤</h4>
+                              <h4>功效：滋养抗衰、排毒养颜、健胃补脾</h4>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
+                      <div class="team-wrapper">
+                          <img src="images/proa6.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>花胶鲍鱼响螺片土鸡汤</h4>
+                              <h4>功效：养肝明目、益肾润燥、柔滑皮肤</h4>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+
+              <!-- Section title
+    ================================================== -->
+              <div class="section-title">
+                  <h2 class="Team-p1">竹炉·定食系</h2>
+                  <h3 class="heading">每个人都有份主食的味道陪伴至今</h3>
+              </div>
+              <div class="wow-wrap">
+                  <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
+                      <div class="team-wrapper">
+                          <img src="images/prob1.jpg" class="img-responsive" alt="team img">
+                          <div class="team-des">
+                              <h4>广式腊味猪油伴煲饭</h4>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
+          </div>
+      </div>
     </section>
 
 
     <!-- The roadmap
 ================================================== -->
     <section id="roadmap" class="parallax-section">
-        <div class="container">
-            <div class="row">
+      <div class="container">
+          <div class="row">
 
-                <!-- Section title
-			================================================== -->
-                <div class="section-title">
-                    <h2 class="h2-cl Roadmap-p1">路線圖</h2>
-                </div>
-
-                <!-- Portfolio bottom section
-			================================================== -->
-                <div class="col-md-12 col-sm-12 roadmap-l">
-                    <div class="road-flex">
-                        <div class="road-flex-bd"></div>
-                        <div class="road-flex-item road-flex-item-ac">
-                            <div class="route-tag-ac">
-                                <p class="Roadmap-p2">第一階段</p>
-                                <p>Sentinel</p>
-                            </div>
-                            <div><img src="./images/route-line-ac.png" alt=""></div>
-                            <div>
-                                <p>2018Q3-Q4</p>
-                                <p class="Roadmap-p3">項目啟動，建立社區和 GoFit 聯盟</p>
-                                <p class="Roadmap-p4">項目立項</p>
-                                <p class="Roadmap-p5">MANA 算法建模</p>
-                                <p class="Roadmap-p6">發布白皮書</p>
-                                <p class="Roadmap-p7">啟動GoFit Lab，主網開發</p>
-                                <p class="Roadmap-p8">全球社區搭建</p>
-                                <p class="Roadmap-p9">Testnet內測</p>
-                            </div>
-                        </div>
-                        <div class="road-flex-item">
-                            <div class="route-tag">
-                                <p class="Roadmap-p10">第二階段</p>
-                                <p>Megaload</p>
-                            </div>
-                            <div><img src="./images/route-line.png" alt=""></div>
-                            <div>
-                                <p>2019Q1-2019Q2</p>
-                                <p class="Roadmap-p11">超級節點競選，主網上線</p>
-                                <p class="Roadmap-p12">啟動超級節點競選</p>
-                                <p class="Roadmap-p13">公布超級節點</p>
-                                <p class="Roadmap-p14">主網上線</p>
-                                <p class="Roadmap-p15">公布區塊瀏覽器、錢包</p>
-                            </div>
-                        </div>
-                        <div class="road-flex-item">
-                            <div class="route-tag">
-                                <p class="Roadmap-p16">第三階段</p>
-                                <p>Macross</p>
-                            </div>
-                            <div><img src="./images/route-line.png" alt=""></div>
-                            <div>
-                                <p>2019Q3-Q4</p>
-                                <p class="Roadmap-p17">主網節點規模成型，生態啟動</p>
-                                <p class="Roadmap-p18">發布第一批生態 DApp</p>
-                                <p class="Roadmap-p19">布局生態投資</p>
-                            </div>
-                        </div>
-                        <div class="road-flex-item">
-                            <div class="route-tag">
-                                <p class="Roadmap-p20">第四階段</p>
-                                <p>Homecoming</p>
-                            </div>
-                            <div><img src="./images/route-line.png" alt=""></div>
-                            <div>
-                                <p>2020</p>
-                                <p class="Roadmap-p21">社區自治</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12 col-sm-12 roadmap-s">
-                    <div class="road-flex road-flex-column">
-                        <!-- <div class="road-flex-bd"></div> -->
-                        <div class="road-flex-item road-flex-item-ac">
-                            <div class="route-tag-ac">
-                                <p class="Roadmap-p2">第一階段</p>
-                                <p>Sentinel</p>
-                            </div>
-                            <div><img src="./images/route-line-ac.png" alt=""></div>
-                            <div>
-                                <p>2018Q3-Q4</p>
-                                <p class="Roadmap-p3">項目啟動，建立社區和 GoFit 聯盟</p>
-                                <p class="Roadmap-p4">項目立項</p>
-                                <p class="Roadmap-p5">MANA 算法建模</p>
-                                <p class="Roadmap-p6">發布白皮書</p>
-                                <p class="Roadmap-p7">啟動 GoFit Lab，主網開發</p>
-                                <p class="Roadmap-p8">全球社區搭建</p>
-                                <p class="Roadmap-p9">Testnet 內測</p>
-                            </div>
-                        </div>
-                        <div class="road-flex-item">
-                            <div class="route-tag">
-                                <p class="Roadmap-p10">第二階段</p>
-                                <p>Megaload</p>
-                            </div>
-                            <div><img src="./images/route-line.png" alt=""></div>
-                            <div>
-                                <p>2019Q1-2019Q2</p>
-                                <p class="Roadmap-p11">超級節點競選，主網上線</p>
-                                <p class="Roadmap-p12">啟動超級節點競選</p>
-                                <p class="Roadmap-p13">公布超級節點</p>
-                                <p class="Roadmap-p14">主網上線</p>
-                                <p class="Roadmap-p15">公布區塊瀏覽器、錢包</p>
-                            </div>
-                        </div>
-                        <div class="road-flex-item">
-                          <div class="route-tag">
-                              <p class="Roadmap-p16">第三階段</p>
-                              <p>Macross</p>
-                          </div>
-                          <div><img src="./images/route-line.png" alt=""></div>
-                          <div>
-                              <p>2019Q3-Q4</p>
-                              <p class="Roadmap-p17">主網節點規模成型，生態啟動</p>
-                              <p class="Roadmap-p18">發布第一批生態 DApp</p>
-                              <p class="Roadmap-p19">布局生態投資</p>
-                          </div>
-                        </div>
-                        <div class="road-flex-item">
-                          <div class="route-tag">
-                              <p class="Roadmap-p20">第四階段</p>
-                              <p>Homecoming</p>
-                          </div>
-                          <div><img src="./images/route-line.png" alt=""></div>
-                          <div>
-                              <p>2020</p>
-                              <p class="Roadmap-p21">社區自治</p>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
+              <!-- Section title
+    ================================================== -->
+              <div class="col-md-offset-1 col-md-10 col-sm-offset-1 col-sm-10">
+                  <div class="section-title section-title-h">
+                      <h1>汤的故事.竹炉荟</h1>
+                      <h3 id="heading" class="Idbook-p1">
+                        凌晨的酒，不如深夜的汤
+                      </h3>
+                      <img class="border-radius" src="images/wh.jpg" alt="">
+                      <h3 id="heading" class="Idbook-p1 style-font-left" style="font-size: 14px!important;">
+                        小时候奶奶喜欢给我煲汤喝，每次奶奶喂我喝汤的那刻都会轻轻的吹凉，懵懂的我记住了这画面，印象里也有了那碗土鸡汤。
+                        <br>
+                        后来读书大考那年，妈妈总是在厨房为我煲汤，一句：汤好了，等下在复习吧。总能牵起我心里最软的怀念。
+                        <br>
+                        离开家工作几年了，有时想家，就会想念那碗汤的香浓味儿。
+                        <br>
+                        电话里又传来了：孩子照顾好自己，记得吃好点，别太累，注意身体。
+                        <br>
+                        <br>
+                        怎能因为匆忙生活停止爱自己，简约的生活不能太简单。
+                        <br>
+                        其实我们都在被呵护着....
+                        <br>
+                        竹炉.汤荟，一种爱与记忆的表达，用心去炖享你的时光。一份满满爱意的汤，关注家人四季健康。
+                      </h3>
+                      <br>
+                      <!-- <hr> -->
+                      <div style="width:100%;height:1px;background:#ccc;"></div>
+                      <br>
+                      <h4>产品：让汤喝出家的温暖</h4>
+                      <p>竹炉.汤荟不是传统汤饮的升级版，而是汤饮的年轻化和国际化。让汤喝出家的温暖，用专注，专业调制出汤饮艺术，令滋补汤饮成为食尚。</p>
+                      <br>
+                      <h4>品牌：新生文化，传承灵魂</h4>
+                      <p>好喝是根本，但竹炉.汤荟不仅仅是一碗汤品，承传节气养生，确保每款汤饮健康理念。新生流行文化，真正读懂食客的心，不靠广告，靠共鸣。</p>
+                      <br>
+                      <h4>历程：时间下的Bamsoup</h4>
+                      <p>十五年炖品下的尝试，十年中医养生下的探索。也许今后的温馨时光，都与竹炉有关。</p>
+                  </div>
+              </div>
 
 
-    <!-- Plan section
-================================================== -->
-    <section id="plan" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <!-- Section title
-			================================================== -->
-                <div class="section-title">
-                    <h2 class="Team-p1">核心團隊</h2>
-                </div>
-                <div class="wow-wrap">
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
-                        <div class="team-wrapper">
-                            <img src="images/gor.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4>David Lau</h4>
-                                <h4 class="Team-p2">GoFit.Chain GM</h4>
-                                <h4 class="Team-p3">大型上市集團 投資總裁</h4>
-                                <h4 class="Team-p4">睿動資本執行董事</h4>
-                                <H4>智博資本合夥人</H4>
-                                <h4>環亞資本數字資產管理創始人</h4>
-                                <h4>參與孵化 IPFS、Chainplus、iFish</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-wrapper">
-                            <img src="images/team5.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p21">Bertrand Vincent</h4>
-                                <h4 class="Consultants-p23">GoFit.Chain CIO</h4>
-                                <h4>歐洲TAG標籤經濟學專家</h4>
-                                <h4 class="Consultants-p24">泛亚金融模型研究实验室主任</h4>
-                                <h4>AI Deep Learning Top100</h4>
-                                <h4>法国区块链Rss研究会荣誉会长</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-wrapper">
-                            <img src="images/t-1.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4>Chris Park（韓國）</h4>
-                                <h4 class="Team-p11">GoFit.Chain CQO</h4>
-                                <h4 class="Team-p8">前韓國三星集團董事局顧問</h4>
-                                <h4 class="Team-p9">MyQueen 醫美機構社長</h4>
-                                <h4 class="Team-p10">韓國美妝 Sp2cosmetic 社長</h4>
-                                <h4>韓國醫療美容合作關系會理事長</h4>
-                                <h4>亞洲地區擁有超 400 家醫療健康機構</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="team-wrapper">
-                            <img src="images/Paul.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4>Tommy Wang</h4>
-                                <h4 class="Team-p5">GoFit.Chain CEO </h4>
-                                <h4 class="Team-p6">蘋果 IOS 資深架構師</h4>
-                                <h4 class="Team-p7">國內區塊鏈領域領頭人</h4>
-                                <H4>去中心化電商平臺 每日生活 CEO</H4>
-                                <H4>爆點傳媒 聯合創始人</H4>
-                                <h4>知名區塊鏈競猜平臺 技術合夥人</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="team-wrapper">
-                            <img src="images/andrew.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4>Wilson Wu</h4>
-                                <h4 class="Team-p11">GoFit.Chain CTO</h4>
-                                <h4 class="Team-p8">微信小程序底層開發</h4>
-                                <h4 class="Team-p9">微信小程序布道第壹人 ID博卡君</h4>
-                                <h4 class="Team-p10">國內知名區塊鏈公司技術負責人</h4>
-                                <h4>旅遊共享電動車 漫騎科技 CTO</h4>
-                                <h4>瑞士 Darwin Laboratory 數據專家</h4>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
-                        <div class="team-wrapper">
-                            <img src="images/t-2.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4>Pony Lau(香港)</h4>
-                                <h4>GoFit.Chain CUO</h4>
-                                <h4 class="Team-p8">數字貨幣 香港早期布道者</h4>
-                                <h4 class="Team-p9">解毒汽車視頻 天使投資人</h4>
-                                <h4 class="Team-p10">科創銳動（香港）創投 CEO</h4>
-                                <h4>香港首個 BTC 水龍頭網站 創始人</h4>
-                                <h4>專註於區塊鏈 ETH\EOS 生態建設</h4>
-                            </div>
-                        </div>
-                     </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Contact section
-================================================== -->
-    <section id="contact" class="parallax-section">
-        <div class="container">
-            <div class="row">
-                <!-- Section title
-			================================================== -->
-                <div class="section-title">
-                    <h2 class="h2-cl Consultants-p1">邀請顧問</h2>
-                </div>
-                <div class="wow-wrap">
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0s">
-                        <div class="team-wrapper">
-                            <img src="images/team4.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p15">Rui Wang</h4>
-                                <h4 class="Consultants-p17">區塊鏈共識學院 聯合創始人</h4>
-                                <h4 class="Consultants-p18">區塊鏈通證經濟模型 研究專家</h4>
-                                <h4 class="Consultants-p19">區塊鏈共識機制 意見領袖</h4>
-                                <h4 class="Consultants-p20">區塊鏈技術論壇與峰會 策劃人</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-wrapper">
-                            <img src="images/team7.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p21">Tomas Lau(美國)</h4>
-                                <h4 class="Consultants-p23">華爾街JP摩根 基差分析專家</h4>
-                                <h4 class="Consultants-p24">美聯儲參議院 特約評論員</h4>
-                                <h4>美國內華達州大學經濟研究所 作客教授</h4>
-                                <h4>曾管理資產市值超過200億美金</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-wrapper">
-                            <img src="images/team6.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p2">Jelo Wang (加拿大)</h4>
-                                <h4 class="Consultants-p4">Face Good 創始人 CEO</h4>
-                                <h4 class="Consultants-p5">面部識別技術國際專家</h4>
-                                <h4>加拿大視覺特效聯盟 唯一中國代表</h4>
-                                <h4>(工業光魔)生物運動解算家</h4>
-                                <h4>自主研發的動作捕捉工具成行業標杆</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="team-wrapper">
-                            <img src="images/team1.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p2">Ray HO</h4>
-                                <h4 class="Consultants-p4">上市公司大乘科技 董事局主席</h4>
-                                <h4 class="Consultants-p5">SSK 飈王品牌 創始人</h4>
-                                <h4>智能硬件行業會副會長</h4>
-                                <h4>建有國家級硬件生產基地</h4>
-                                <h4>智能存儲產品連續兩年行業銷量第一</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="team-wrapper">
-                            <img src="images/team8.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p6">Phillip Hutchinson(英國)</h4>
-                                <h4 class="Consultants-p8">科瑞國際(香港)聯合創始人</h4>
-                                <h4 class="Consultants-p9">Lavish PR Group CEO</h4>
-                                <h4 class="Consultants-p10">資深區塊鏈專案投資顧問</h4>
-                                <h4>Charterhouse Partnership 高級顧問</h4>
-                                <h4>Jade Global Investment Holding 創始人</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.5s">
-                        <div class="team-wrapper">
-                            <img src="images/team3.png" class="img-responsive" alt="team img">
-                            <div class="team-des">
-                                <h4 class="Consultants-p11">Punk Han</h4>
-                                <h4 class="Consultants-p13">騰訊 首位高級產品經理</h4>
-                                <h4 class="Consultants-p14">高搜易集團 聯合創始人</h4>
-                                <h4>先後涉足電子商務，兒童應用、遊戲理財</h4>
-                                <h4>多個專案獲得資本追捧，擁有審核的互聯網 產品思維及運營能力</h4>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
+          </div>
+      </div>
     </section>
 
 
@@ -678,92 +461,18 @@
                 <!-- Section title
 			================================================== -->
                 <div class="section-title">
-                    <h2 class="h2-cl">FAQ</h2>
+                    <h2 class="h2-cl">联系我们</h2>
                 </div>
                 <div class="wow-wrap">
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-des">
-                            <h4 class="FQA-p1">1.什麽是 GoFit ？</h4>
-                            <p>
-                                <span class="FQA-p2">GoFit.Chain 沸騰鏈，讓全民運動起來，開啟運動即挖礦的全民健康時代。</span>
-                                <br />
-                                <span class="FQA-p3">融合運動健康數據生態，全球第壹個覆蓋運動+健康挖礦落的區塊鏈落地項目。基於區塊鏈網絡進行科學運動健身，並為全球運動健身用戶精準提供大健康數據、運動智能的去中心化生命數據銀行。</span>
-                                <br />
-                                <span>GoFit.Chain 基於區塊鏈技術，采用 Dpos 共識機制，Delegated Proof Of Stake，委任權益證明，致力於通過智能終端根據運動數據獲得區塊鏈權益資產 GFC。主網上線後讓每壹個持幣者都可以進行投票，由此產生壹定數量的節點，他們彼此之間的權利是完全相等的。持幣者可以隨時通過投票更換這些代表，以維系鏈上 GFC 的公平性、穩定性。</span>
-                            </p>
-                        </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                      <p>公司：深圳市竹炉汤荟餐饮管理有限公司</p>
+                      <p>地址：深圳市福田区车公庙泰然路中联大厦</p>
+                      <p></p>
                     </div>
 
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="team-des">
-                            <h4 class="FQA-p5">2.GoFit 有什麽樣的使命？</h4>
-                            <p>
-                                <ul>
-                                    <li class="FQA-p6">
-                                        保障上鏈用戶數據安全與身份真實性
-                                    </li>
-                                    <li class="FQA-p7">
-                                      運動無處不在！在萬物互聯的今天，數以億計的體育和運動終端產生的數據沒有被有效存儲，智能設備與運動之間沒有真正形成有效的協同，大量設備成為網絡的孤島。GFC 創建的理念是通過運動帶來價值回報，同時實現數據的有效管理，引導終端加入到運動產數據，數據即礦池的生態中，讓每壹個節點參與者都能實現運動健康數據互換並從中得到激勵。
-                                    </li>
-                                    <li class="FQA-p8">
-                                      GFC 利用區塊鏈的去中心化特點從根本上實現全民運動價值共享，每壹個參與運動的人都會是 GoFit.Chain 的分布式節點，通過智能合約讓每個參與者在運動中產生收益。Token 的發行給運動、健身、訓練賦予了生產力，讓參與者生命認證信息、運動健康數據產生價值。采樣健康數據為生命智能與智慧醫學提供創新和發展。
-                                    </li>
-                                    <li class="FQA-p9">
-                                      GoFit.Chain 在未來可為專業運動員研發 3D 運動軌跡捕捉記錄系統，使用可穿戴 智能芯片及先進算法對每壹個動作、每壹次訓練進行 3D 記錄和呈現，可廣泛適用於學 校、體育訓練，醫療診斷等領域。
-                                    </li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="team-des">
-                            <h4 class="FQA-p10">3.什麽是 GFC？</h4>
-                            <p class="FQA-p11">GFC 是 GoFitChain 沸騰鏈生態的數字資產貨幣、可以用於支付購買鏈上節點所提供的服務</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="team-des">
-                            <h4 class="FQA-p12">4.GFC 怎麽獲得?</h4>
-                            <p>
-                                <ol type="a">
-                                    <li class="FQA-p13">
-                                      GFC 基於手機或可穿戴智能硬件，通過藍牙與 Dapp 進行連接采集用戶多維度運動數據，結合硬件、手機及用戶運動綜合數據原理設計出獨特的智能調整算法。
-                                    </li>
-                                    <li class="FQA-p14">
-                                      依據用戶的每天的運動量、特定場景的加速量、每日運動時間、運動綜合數據、健身時間周期等制定了科學的評分機制。根據所有用戶的評分結果，每個時間周期內為用戶發代幣獎勵。理論上，評分越高，代幣獎勵就會越多。
-                                    </li>
-                                    <li>
-                                      GoFitChain 的生態中，所有堅持健身的用戶，都有獲得代幣獎勵的可能性。每壹次的代幣獎勵，都表示用戶付出了汗水、時間、精神等進行健身訓練。代幣本質上是用戶健身工作量證明。每個周期代幣的獎勵總量會隨著礦池總量的減少而減少。
-                                    </li>
-                                </ol>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="1.5s">
-                        <div class="team-des">
-                            <h4 class="FQA-p19">5.組織/機構上鏈需要什麽資格？</h4>
-                            <p>
-                                <ol type="a">
-                                    <li class="FQA-p20">任何機構和個人均可申請成爲 GoFit 鏈上節點，但現實世界中的非登記機構申請成爲鏈上節點時，需要提供信息進行驗真，並瑣定壹部分 GFC 作爲保證金</li>
-                                    <li class="FQA-p21">成爲節點後可以爲個人用護提供身份認證和其他的更多服務，同時也將慘與到鏈上數據的存儲，與鏈上其他節點對個人用護數據的真實性達成共識</li>
-                                </ol>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="1.8s">
-                        <div class="team-des">
-                            <h4 class="FQA-p22">6.我可以在 GoFit 上開發應用嗎？我能獲得什麽？</h4>
-                            <p>
-                                <ol type="a">
-                                    <li class="FQA-p23">GoFit 是壹條開源公鏈，個人與組織均可以開發者的身份在 GoFit 上開發應用，所有的 DApp 均可用鏈上身份進行登錄</li>
-                                    <li class="FQA-p24">開發者可獲得原生激勵，和社區生態共同成長</li>
-                                </ol>
-                            </p>
-                        </div>
+                    <div class="col-md-6 col-sm-6 wow fadeInUp qr-text" data-wow-delay="0.6s">
+                      <img class="qr" src="images/contact.jpg" alt="">
+                      <div class="qr-text-wecat">竹炉汤荟微信号公众号</div>
                     </div>
 
                 </div>
@@ -773,7 +482,7 @@
 
     <!-- Footer section
 ================================================== -->
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="wow-wrap">
@@ -791,7 +500,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="js/jquery.js"></script>
@@ -807,6 +516,18 @@
     <script src="js/jquery.parallax.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        autoplay : 5000,
+        // 如果需要分页器
+        pagination: '.swiper-pagination',
+        paginationClickable :true,
+        })
+      })
+    </script>
 
 </body>
 

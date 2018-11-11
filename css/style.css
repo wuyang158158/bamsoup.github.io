@@ -118,16 +118,20 @@ hr {
 #contact,
 #roadmap,
 #FQA,
-#home,
+/* #home, */
 #LEGAL {
-    padding-top: 60px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 #team,
 #portfolio,
 #contact {
     text-align: center;
+}
+
+div#home{
+  padding-top: 84px;
 }
 
 .parallax-section {
@@ -204,7 +208,7 @@ hr {
 /* ========================================== */
 
 .custom-navbar {
-    background: #3d3744;
+    background: #ffffff;
     border: none;
     margin-bottom: 0;
     text-align: center;
@@ -234,9 +238,9 @@ hr {
 .custom-navbar .nav li a {
     display: block;
     padding: 15px 15px;
-    color: #ffffff;
+    color: #000000;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 2px;
 }
 
@@ -246,12 +250,13 @@ hr {
 
 .custom-navbar .nav>li>a:focus {
     background-color: transparent;
-    color: #ffffff;
+    color: #FF0000;
     outline: none;
 }
 
 .custom-navbar .nav li.active>a {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #FF0000;
+    color: #FF0000;
 }
 
 .custom-navbar .navbar-toggle {
@@ -276,7 +281,7 @@ hr {
     }
     .custom-navbar.top-nav-collapse {
         padding: 16px;
-        background: #3d3744;
+        background: #ffffff;
         border-bottom: 0;
     }
 }
@@ -306,7 +311,7 @@ hr {
 }
 
 .site-slider-img {
-    height: 600px;
+    /* height: 600px; */
     width: 100%;
 }
 
@@ -371,7 +376,7 @@ hr {
 
 .bxslider {
     /* background-color: #000000; */
-    /* background:#3d3744 url('../images/slider/banner.png') no-repeat center; */
+    /* background:#ffffff url('../images/slider/banner.png') no-repeat center; */
 }
 
 .bxslider-bg {
@@ -397,21 +402,23 @@ hr {
     color: #ffffff;
     display: inline-block;
     right: 0;
-    left: 0;
+    left: 50%;
     text-align: center;
     padding: 0 20px 20px 20px;
+    background: rgba(0,0,0,0.2);
+    width: 60%;
+    margin-left: -30%;
 }
 
 .slider-caption h2 {
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 600;
     display: inline-block;
     margin-bottom: 24px;
-    letter-spacing: 10px;
 }
 
 .slider-caption p {
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 10px;
     word-spacing: 10px;
     margin-top: 10px;
@@ -518,7 +525,7 @@ hr {
 /* ========================================== */
 
 #work {
-    background: #F1F4FB;
+    background: #FFFFFF;
 }
 
 #work .col-md-4 {
@@ -543,6 +550,22 @@ hr {
     width: 25%;
 }
 
+#work .work-list-wrap h2{
+  font-size: 20px;
+}
+
+
+.h3-width{
+  width: 65%;
+  margin: 0 auto;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.style-font-left{
+  text-align: left;
+}
+
 #work .work-list-wrap .item h3:nth-of-type(2) {
     margin-top: 0;
 }
@@ -559,6 +582,11 @@ hr {
 }
 
 #heading {
+    font-size: 20px!important;
+    line-height: 40px!important;
+    color: rgba(18, 30, 56)!important;
+}
+.heading {
     font-size: 20px!important;
     line-height: 40px!important;
     color: rgba(18, 30, 56)!important;
@@ -587,12 +615,15 @@ hr {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-    color: #ffffff;
+    color: #000;
     text-align: center;
     position: relative;
-    padding-bottom: 340px;
+    background: #F1F4FB;
 }
-
+.border-radius{
+  border-radius: 20px;
+  margin-top: 10px;
+}
 #about .bg {
     width: 60%;
     margin-top: 175px;
@@ -709,7 +740,7 @@ hr {
         width: 25%;
     }
     #about h2 {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
 }
 
@@ -756,7 +787,7 @@ hr {
         width: 25%;
     }
     #about h2 {
-        padding-bottom: 20px;
+        padding-bottom: 0px;
     }
 }
 
@@ -798,7 +829,7 @@ hr {
 /* ========================================== */
 
 #roadmap {
-    background: #F1F4FB;
+    background: #FFFFFF;
 }
 
 #roadmap .road-flex {
@@ -942,7 +973,7 @@ hr {
 }
 
 #team .framework {
-    background: #3d3744;
+    background: #ffffff;
 }
 
 #team .framework img {
@@ -966,6 +997,15 @@ hr {
 
 #team .team-wrapper .social-icon li a {
     font-size: 16px;
+}
+.team-wrapper img{
+  margin: 0 auto;
+  width: 350px;
+  border-radius: 20px;
+}
+#about .team-des{
+  padding: 20px 0;
+  padding-bottom: 30px;
 }
 
 
@@ -1143,7 +1183,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* ========================================== */
 
 #plan {
-    background: #3d3744;
+    background: #F1F4FB;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -1432,7 +1472,7 @@ footer h2 {
 }
 
 .team-des h4 {
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .team-des h4:nth-child(1) {
@@ -1494,7 +1534,7 @@ footer h2 {
 
 @media (min-width: 1200px) {
     .slider-caption {
-        bottom: 120px;
+        bottom: 100px;
     }
 }
 
@@ -1503,7 +1543,7 @@ footer h2 {
         display: none;
     }
     .slider-caption {
-        bottom: 120px;
+        bottom: 80px;
     }
     .bx-controls-direction {
         bottom: 30px;
@@ -1812,5 +1852,26 @@ a.footer-p2:hover {
     /* font-weight: 600; */
 }
 .logo{
-  width: 50%;
+  width: 65%;
+}
+.section-title-h h4{
+  font-size: 18px;
+  text-align: left;
+}
+.section-title-h p{
+  text-align: left;
+  font-size: 14px;
+}
+#FQA{
+  background: #F1F4FB;
+}
+.qr{
+  width: 32%;
+}
+.qr-text{
+  text-align: center;
+}
+.qr-text-wecat{
+  font-size: 14px;
+  margin-top: 10px;
 }
