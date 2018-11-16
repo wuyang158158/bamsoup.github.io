@@ -264,7 +264,7 @@ div#home{
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #ffa400;
+    background: #FF0000;
     border-color: transparent;
 }
 
@@ -289,7 +289,7 @@ div#home{
 @media (max-width: 767px) {
     .custom-navbar .nav li.active>a {
         border-bottom: 2px solid transparent !important;
-        color: #ffa400;
+        color: #FF0000;
     }
 }
 
@@ -1556,6 +1556,10 @@ footer h2 {
     .slider-caption {
         /* bottom: 60px; */
     }
+    .h3-width{
+      width: 100%;
+      padding-bottom: 30px;
+    }
     .slider-caption h2 {
         font-size: 32px;
         margin-bottom: 5px;
@@ -1575,10 +1579,20 @@ footer h2 {
     .custom-navbar .navbar-brand {
         border: none;
         font-size: 18px;
+        width: 60%;
     }
     .custom-navbar .navbar-brand img {
         width: 60%;
         margin-left: 15px;
+    }
+    .section-title{
+      padding: 0;
+    }
+    #work .section-title{
+      padding: 0!important;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+      bottom: 5px!important;
     }
 }
 
@@ -1646,7 +1660,7 @@ footer h2 {
 
 @media (max-width: 767px) {
     .site-slider {
-        padding-top: 50px;
+        /* padding-top: 50px; */
     }
     #plan .plan {
         padding-right: 0;
@@ -1876,4 +1890,7 @@ a.footer-p2:hover {
 .qr-text-wecat{
   font-size: 14px;
   margin-top: 10px;
+}
+.wow-wrap-item .item{
+  text-align: center;
 }

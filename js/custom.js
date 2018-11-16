@@ -5,9 +5,18 @@ $(window).load(function(){
     $('.preloader').fadeOut(1000); // set duration in brackets
 });
 
-
+let isFlag = true;
 $(function () {
     FastClick.attach(document.body);
+    $('.navbar-right li a').click(e=>{
+      if(isFlag){
+        isFlag = false;
+        setTimeout(()=>{
+          $('.collapse').collapse('hide');
+          isFlag = true;
+        },1500)
+      }
+    })
     /**
     * Gets the browser language type
     * @return {string} Browser national language
