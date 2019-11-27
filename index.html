@@ -197,11 +197,11 @@ requestAnimationFrame(render);
 starttime()
 
 function starttime(){
-        time(h1,'2019/9/25');     // 第一次见面的时间
+        time(h1,'2019/9/25','2019/11/26 19:00');     // 第一次见面的时间
         ptimer = setTimeout(starttime,1000); // 添加计时器
 }
 
-    function time(obj,futimg){
+    function time(obj,futimg,secondTime){
         var nowtime = new Date().getTime(); // 现在时间转换为时间戳
         var futruetime =  new Date(futimg).getTime(); // 未来时间转换为时间戳
         var msec = nowtime-futruetime; // 毫秒 未来时间-现在时间
@@ -210,9 +210,20 @@ function starttime(){
         var hour = parseInt(time/3600)-24*day;    // 小时 60*60 总小时数-过去的小时数=现在的小时数 
         var minute = parseInt(time%3600/60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
         var second = parseInt(time%60);  // 以60秒为一整份 取余 剩下秒数
-//              console.log(hour+":"+minute+":"+second)
-//              alert(hour)
-        obj.innerHTML="吴泱love曾晓钰<br>时光飞逝，终遇你，认识的时间已经过去：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br><span>南国无雪，入夜尝浅秋.<br>梦里断魂，一枕相思泪.<br>人间值得，只因遇见你.<br>心中有情，与汝伴长尘.<br><br>玫瑰花下许下誓言，我吴泱余生只爱你曾晓钰.<br>就让这永恒的计时器作为见证.</span>"
+        //console.log(hour+":"+minute+":"+second)
+        //alert(hour)
+        // 在一起时间
+        var futruetime1 =  new Date(secondTime).getTime(); // 未来时间转换为时间戳
+        var msec1 = nowtime-futruetime1; // 毫秒 未来时间-现在时间
+        var time1 = (msec1/1000);  // 毫秒/1000
+        var day1 = parseInt(time1/86400); // 天  24*60*60*1000 
+        var hour1 = parseInt(time1/3600)-24*day1;    // 小时 60*60 总小时数-过去的小时数=现在的小时数 
+        var minute1 = parseInt(time1%3600/60); // 分 -(day*24) 以60秒为一整份 取余 剩下秒数 秒数/60 就是分钟数
+        var second1 = parseInt(time1%60);  // 以60秒为一整份 取余 剩下秒数
+
+
+
+        obj.innerHTML="吴泱love曾晓钰<br>时光飞逝，终遇你，相识的时间已经过去：<br>"+day+"天"+hour+"小时"+minute+"分"+second+"秒"+"<br>表白的时间已经过去：<br>"+day1+"天"+hour1+"小时"+minute1+"分"+second1+"秒"+"<br><span>南国无雪，入夜尝浅秋.<br>梦里断魂，一枕相思泪.<br>人间值得，只因遇见你.<br>心中有情，与汝伴长尘.<br>玫瑰花下许下誓言，我吴泱余生只爱你曾晓钰.<br>就让这永恒的计时器作为见证.</span>"
 
         return true;
     }
