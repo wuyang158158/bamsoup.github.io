@@ -1,4 +1,4 @@
-var svg = document.getElementById('svg');
+var svg = document.getElementById('wrap');
 
 var animation0 = document.getElementById('animate0'); 
 svg.addEventListener('mouseenter', function(){ animation0.beginElement(); });
@@ -60,3 +60,71 @@ var animation13 = document.getElementById('animate13');
 svg.addEventListener('touchstart', function(){ animation13.beginElement(); });
 var animation14 = document.getElementById('animate14'); 
 svg.addEventListener('touchstart', function(){ animation14.beginElement(); });
+
+
+var animation0a1 = document.getElementById('animate0-1'); 
+svg.addEventListener('mouseenter', function(){ animation0a1.beginElement(); });
+var animation1a1 = document.getElementById('animate1-1'); 
+svg.addEventListener('mouseenter', function(){ animation1a1.beginElement(); });
+var animation2a1 = document.getElementById('animate2-1'); 
+svg.addEventListener('mouseenter', function(){ animation2a1.beginElement(); });
+var animation3a1 = document.getElementById('animate3-1'); 
+svg.addEventListener('mouseenter', function(){ animation3a1.beginElement(); });
+var animation4a1 = document.getElementById('animate4-1'); 
+svg.addEventListener('mouseenter', function(){ animation4a1.beginElement(); });
+var animation5a1 = document.getElementById('animate5-1'); 
+svg.addEventListener('mouseenter', function(){ animation5a1.beginElement(); });
+var animation6a1 = document.getElementById('animate6-1'); 
+svg.addEventListener('mouseenter', function(){ animation6a1.beginElement(); });
+var animation7a1 = document.getElementById('animate7-1'); 
+svg.addEventListener('mouseenter', function(){ animation7a1.beginElement(); });
+var animation8a1 = document.getElementById('animate8-1'); 
+svg.addEventListener('mouseenter', function(){ animation8a1.beginElement(); });
+var animation9a1 = document.getElementById('animate9-1'); 
+svg.addEventListener('mouseenter', function(){ animation9a1.beginElement(); });
+var animation10a1 = document.getElementById('animate10-1'); 
+svg.addEventListener('mouseenter', function(){ animation10a1.beginElement(); });
+var animation11a1 = document.getElementById('animate11-1'); 
+svg.addEventListener('mouseenter', function(){ animation11a1.beginElement(); });
+var animation12a1 = document.getElementById('animate12-1'); 
+svg.addEventListener('mouseenter', function(){ animation12a1.beginElement(); });
+var animation13a1 = document.getElementById('animate13-1'); 
+svg.addEventListener('mouseenter', function(){ animation13a1.beginElement(); });
+var animation14a1 = document.getElementById('animate14-1'); 
+svg.addEventListener('mouseenter', function(){ animation14a1.beginElement(); });
+
+svg.addEventListener('touchstart', function(){ animation0a1.beginElement(); });
+var animation1a1 = document.getElementById('animate1-1'); 
+svg.addEventListener('touchstart', function(){ animation1a1.beginElement(); });
+var animation2a1 = document.getElementById('animate2-1'); 
+svg.addEventListener('touchstart', function(){ animation2a1.beginElement(); });
+var animation3a1 = document.getElementById('animate3-1'); 
+svg.addEventListener('touchstart', function(){ animation3a1.beginElement(); });
+var animation4a1 = document.getElementById('animate4-1'); 
+svg.addEventListener('touchstart', function(){ animation4a1.beginElement(); });
+var animation5a1 = document.getElementById('animate5-1'); 
+svg.addEventListener('touchstart', function(){ animation5a1.beginElement(); });
+var animation6a1 = document.getElementById('animate6-1'); 
+svg.addEventListener('touchstart', function(){ animation6a1.beginElement(); });
+var animation7a1 = document.getElementById('animate7-1'); 
+svg.addEventListener('touchstart', function(){ animation7a1.beginElement(); });
+var animation8a1 = document.getElementById('animate8-1'); 
+svg.addEventListener('touchstart', function(){ animation8a1.beginElement(); });
+var animation9a1 = document.getElementById('animate9-1'); 
+svg.addEventListener('touchstart', function(){ animation9a1.beginElement(); });
+var animation10a1 = document.getElementById('animate10-1'); 
+svg.addEventListener('touchstart', function(){ animation10a1.beginElement(); });
+var animation11a1 = document.getElementById('animate11-1'); 
+svg.addEventListener('touchstart', function(){ animation11a1.beginElement(); });
+var animation12a1 = document.getElementById('animate12-1'); 
+svg.addEventListener('touchstart', function(){ animation12a1.beginElement(); });
+var animation13a1 = document.getElementById('animate13-1'); 
+svg.addEventListener('touchstart', function(){ animation13a1.beginElement(); });
+var animation14a1 = document.getElementById('animate14-1'); 
+svg.addEventListener('touchstart', function(){ animation14a1.beginElement(); });
+
+
+
+// var svg1 = document.getElementById('svg1');
+
+
