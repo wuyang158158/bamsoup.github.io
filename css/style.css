@@ -131,7 +131,7 @@ hr {
   width: 100%;
 }
 div#home {
-  position: relative;
+  /* position: relative; */
   /* padding-top: 84px; */
 }
 div#home .b-img-a {
@@ -143,6 +143,129 @@ div#home .b-img-a {
 }
 div#home .b-img-a-op {
   opacity: 0.7;
+}
+.bg0{
+  background: url(../images/img/bg0.png)no-repeat center;
+  background-size: cover;
+}
+.bg0 .nav{
+  width: 885px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.bg0 .nav a{
+  padding: 30px 60px;
+  cursor: pointer!important;
+}
+.bg0 .nav .img{
+  width: 80%;
+}
+.bg0 .nav .img1{
+  width: 80%;
+}
+.bg0 .items{
+  margin-top: 50px;
+}
+.bg0 .items .icon{
+  width: 90%;
+}
+.bg0 .items .icon1{
+  width: 125%;
+  margin-left: -35%;
+  margin-top: -65%;
+  margin-bottom: 30%;
+}
+#ct1{
+  background: #fff;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+#ct1 .flex,.ct2 .flex{
+  width: 885px;
+  margin: 0 auto;
+}
+#ct1 .ft{
+  margin: 55px auto;
+  margin-bottom: 0;
+}
+#ct1 .flex p{
+  font-size: 14px;
+  line-height: 50px;
+  margin: 0;
+  color: #000;
+}
+#ct1 .fb{
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.company{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.company .icon{
+  width: 85%;
+}
+.company .txt{
+  width: 155px;
+  font-size: 14px;
+  color: #000;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.f14{
+  font-size: 14px;
+}
+.ct2{
+  background: #513a34;
+  position: relative;
+  color: #fff;
+  padding-top: 32px;
+}
+.ct3{
+  background: #31622b;
+}
+.ct4{
+  background: #292929;
+}
+.ct5{
+  background: #2a6142;
+}
+.bg1{
+  position: absolute;
+  width: 35%;
+  top: 200px;
+  left: 50%;
+  transform: translate(-55%);
+}
+.bg2{
+  top: 30px;
+}
+.bg3{
+  top: 90px;
+}
+.bg4{
+  width: 40%;
+  top: 40px;
+}
+.introduce{
+  width: 317px;
+}
+.introduce .title{
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 76px;
+}
+.introduce .txt{
+  font-size: 14px;
+  line-height: 34px;
 }
 .parallax-section {
   background-attachment: fixed !important;
