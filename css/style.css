@@ -144,126 +144,196 @@ div#home .b-img-a {
 div#home .b-img-a-op {
   opacity: 0.7;
 }
-.bg0{
-  background: url(../images/img/bg0.png)no-repeat center;
+.bg0 {
+  background: url(../images/img/bg0.png) no-repeat center;
   background-size: cover;
 }
-.bg0 .nav{
+.bg0 .nav {
   width: 885px;
   margin: 0 auto;
   justify-content: space-between;
 }
-.bg0 .nav a{
+.bg0 .nav a {
   padding: 30px 60px;
-  cursor: pointer!important;
+  cursor: pointer !important;
 }
-.bg0 .nav .img{
+.bg0 .nav .img {
   width: 80%;
 }
-.bg0 .nav .img1{
+.bg0 .nav .img1 {
   width: 80%;
 }
-.bg0 .items{
+.bg0 .items {
   margin-top: 50px;
 }
-.bg0 .items .icon{
+.bg0 .items .icon {
   width: 90%;
 }
-.bg0 .items .icon1{
+.bg0 .items .icon1 {
   width: 125%;
   margin-left: -35%;
   margin-top: -65%;
   margin-bottom: 30%;
 }
-#ct1{
+#ct1 {
   background: #fff;
 }
-.flex{
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
 }
-#ct1 .flex,.ct2 .flex{
+#ct1 .flex,
+.ct2 .flex {
   width: 885px;
   margin: 0 auto;
 }
-#ct1 .ft{
+#ct1 .ft {
   margin: 55px auto;
   margin-bottom: 0;
 }
-#ct1 .flex p{
+#ct1 .flex p {
   font-size: 14px;
   line-height: 50px;
   margin: 0;
   color: #000;
 }
-#ct1 .fb{
+#ct1 .fb {
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.company{
+#ct6 .tip-icon {
+  display: block;
+  margin: 80px auto;
+}
+#ct6 .tip-icon-17 {
+  margin: 0 auto;
+}
+#ct6 .mb {
+  margin-bottom: 50px;
+}
+#ct6 .si-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 50px;
+}
+#ct6 .si-list .text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #000;
+}
+#ct6 .brand-msg .title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 60px;
+}
+#ct6 .brand-msg .text {
+  text-align: left;
+  font-size: 14px;
+  line-height: 34px;
+  color: #000;
+  margin-top: 30px;
+  width: 540px;
+  margin: 0 auto;
+}
+#ct7 {
+  /* background: #3b452d; */
+  background: #fff;
+  padding: 50px 0 150px 0;
+}
+#ct7 .icon {
+  width: 40%;
+  margin-right: 100px;
+}
+#ct7 .company-list p {
+  font-size: 12px;
+  color: #000;
+  text-align: right;
+  line-height: 24px;
+}
+#web-home {
+  background: url(../images/h5/h5-1-1.png) no-repeat center;
+  background-size: cover;
+}
+#web-home .icon {
+  margin-top: 50px;
+  width: 40%;
+}
+#web-home .icon1 {
+  width: 30%;
+}
+#web-home .nav a img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+}
+.company {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.company .icon{
+.company .icon {
   width: 85%;
 }
-.company .txt{
+.company .txt {
   width: 155px;
   font-size: 14px;
   color: #000;
   margin-top: 30px;
   margin-left: 30px;
 }
-.f14{
+.f14 {
   font-size: 14px;
 }
-.ct2{
+.ct2 {
   background: #513a34;
   position: relative;
   color: #fff;
   padding-top: 32px;
 }
-.ct3{
+.ct3 {
   background: #31622b;
 }
-.ct4{
+.ct4 {
   background: #292929;
 }
-.ct5{
+.ct5 {
   background: #2a6142;
 }
-.bg1{
+.bg1 {
   position: absolute;
   width: 35%;
   top: 200px;
   left: 50%;
   transform: translate(-55%);
 }
-.bg2{
+.bg2 {
   top: 30px;
 }
-.bg3{
+.bg3 {
   top: 90px;
 }
-.bg4{
+.bg4 {
   width: 40%;
   top: 40px;
 }
-.introduce{
+.introduce {
   width: 317px;
 }
-.introduce .title{
+.introduce .title {
   font-weight: bold;
   font-size: 26px;
   line-height: 76px;
 }
-.introduce .txt{
+.introduce .txt {
   font-size: 14px;
   line-height: 34px;
 }

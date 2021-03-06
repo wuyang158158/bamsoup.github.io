@@ -1,9 +1,5 @@
 /* jQuery Preloader
   -----------------------------------------------*/
-// $(window).load(function () {
-//   $('.preloader').fadeOut(1000) // set duration in brackets
-// })
-
 let isFlag = true
 $(function () {
   FastClick.attach(document.body)
@@ -35,9 +31,9 @@ $(function () {
 
   /* Hide mobile menu after clicking on a link
     -----------------------------------------------*/
-  $('.navbar-collapse a').click(function(){
-      $(".navbar-collapse").collapse('hide');
-  });
+  $('.navbar-collapse a').click(function () {
+    $('.navbar-collapse').collapse('hide')
+  })
 
   /* jQuery to collapse the navbar on scroll
     -----------------------------------------------*/
@@ -59,17 +55,17 @@ $(function () {
 
     function mainSlider() {
       $('.bxslider').bxSlider({
-      auto: false,
-      infiniteLoop: false,
-      controls: false,
+        auto: false,
+        infiniteLoop: false,
+        controls: false,
         pagerCustom: '#bx-pager',
         mode: 'fade',
         nextText: '',
-        prevText: ''
-      });
+        prevText: '',
+      })
     }
 
-    mainSlider();
+    mainSlider()
 
     var $links = $('.bx-wrapper .bx-controls-direction a, #bx-pager a')
     $links.click(function () {
@@ -81,17 +77,6 @@ $(function () {
     $('.bx-next').addClass('fa fa-angle-right')
     $('.bx-prev').addClass('fa fa-angle-left')
   })(window, jQuery)
-
-  /* Owl Carousel
-    -----------------------------------------------*/
-  $(document).ready(function() {
-    $("#owl-work").owlCarousel({
-      autoPlay: 3000,
-      items : 4,
-      itemsDesktop : [1199,4],
-      itemsDesktopSmall : [979,4],
-    });
-  });
 
   /* Parallax section
     -----------------------------------------------*/
