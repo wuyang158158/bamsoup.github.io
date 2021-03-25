@@ -260,18 +260,111 @@ div#home .b-img-a-op {
 #web-home {
   background: url(../images/h5/h5-1-1.png) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+#web-home .logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 50%;
+}
+#web-home .introduce {
+  width: 40%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 #web-home .icon {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 40%;
 }
 #web-home .icon1 {
-  width: 30%;
+  width: 35%;
+  margin-top: 40%;
+}
+#web-home .nav {
+  justify-content: space-around;
+}
+#web-home .nav a {
+  padding-bottom: 20px;
 }
 #web-home .nav a img {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   display: block;
+}
+#web-ct1 .logo {
+  width: 30%;
+  display: block;
+  margin: 50px auto;
+}
+#web-ct1 .f14 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+#web-ct1 .f14 p {
+  color: #000;
+}
+#web-ct1 .lists {
+  margin: 20px 40px;
+  flex-wrap: wrap;
+}
+#web-ct1 .lists .company {
+  width: 50%;
+  margin: 10px 0;
+}
+#web-ct1 .lists .company .icon {
+  width: 60%;
+}
+#web-ct1 .lists .company .txt {
+  width: 150px;
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+#web-ct1 .lists .company .txt i {
+  font-style: normal;
+  display: block;
+  line-height: 20px;
+}
+#web-ct2 {
+  background: #513a34;
+}
+.products {
+  position: relative;
+  color: #fff;
+  padding-top: 32px;
+}
+.products .logo {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.products .introduce-text {
+  font-size: 12px;
+  line-height: 22px;
+  margin: auto;
+  text-align: center;
+}
+.products .introduce-text-ac {
+  text-align: left;
+  margin: auto 10px;
+}
+.products .banner {
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+.replenish {
+  width: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .company {
   flex: 1;
