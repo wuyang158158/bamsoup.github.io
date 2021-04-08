@@ -401,6 +401,81 @@ div#home .b-img-a-op {
 .ct5 {
   background: #2a6142;
 }
+.ct6 {
+  background: #fff;
+  padding-bottom: 50px;
+}
+.ct7 {
+  background: url('../images/h5/8/1.png') no-repeat;
+  background-size: cover;
+}
+.ct6-title {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.ct6-flex {
+  margin: 20px 30px;
+}
+.ct6-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+}
+.ct6-icon {
+  width: 55%;
+  margin: 5px 0;
+}
+.ct6-3 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.ct6-4 {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+}
+.ct6-line {
+  margin: 20px;
+  height: 2px;
+  background: #ddd;
+}
+.ct6-info {
+  margin: 20px;
+  line-height: 26px;
+  color: #000;
+  font-size: 12px;
+}
+.ct6-5 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.ct7 {
+  padding: 20px 10px;
+}
+.ct7-flex1 {
+  flex: 1;
+}
+.ct7-flex1 p {
+  font-size: 12px;
+  color: #fff;
+  text-align: right;
+  line-height: 16px;
+}
+.ct7-company-list {
+  flex: 1.5;
+  transform: scale(0.9);
+}
+.ct7-img {
+  width: 20%;
+}
 .bg1 {
   position: absolute;
   width: 35%;
